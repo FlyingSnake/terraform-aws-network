@@ -5,8 +5,8 @@ AWS Network Resource Initialization Module
 ## Usage
 
 ```hcl
-{
-  source      = "../TF-network/TF-network"
+module "terraform-aws-network" {
+  source      = "FlyingSnake/network/aws"
   name_prefix = "TF-"
   tags = {
     Terraform       = "true"
